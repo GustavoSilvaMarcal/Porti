@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p{
+   font-family:Ubuntu;
+   font-size: 15px;
+}
+
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: var(--color-black);
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: var(--first-color);
+  padding: 5px;
+  background: var(--color-white);
+  transform: translateX(-50%);
+}
+
+.about .title::after {
+  background: var(--clean-white-purple);
+  content: "minha história";
+  white-space: nowrap;
+}
+
+
+/* ============= VARIABLES CSS ============= */
+:root {
+  --first-color: rgba(255, 255, 255, 0.774);
+  --color-purple-light: rgb(255, 102, 0);
+  --color-white-pink: rgb(255, 166, 0);
+  --clean-white-purple: rgba(245, 237, 237, 0.692);
+  --text-color-light: rgb(255, 153, 0);
+  --scroll-thumb-color: rgb(161, 151, 180);
+  --scroll-bar-color: rgb(188, 181, 201);
+  --clean-light-gray: rgba(255, 252, 252, 0.986);
+  --color-clean-white: rgb(241, 239, 239);
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(255, 255, 255);
+  --color-black-clean: rgb(255, 255, 255);
+  --color-footer: rgb(0, 0, 0);
+
+}
+
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+
+  margin: auto;
+
+}
+
+
+
+/* ============= MENU NAVBAR ============= */
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  padding: 1px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+  margin-left: -100px;
+}
+
+/* script js sticky*/
+
+.nav-bar .max-width {
+  margin-left: 600px;
+
+  justify-content: space-between;
+
+}
+
+.nav-bar .logo a {
+
+  color: var(--color-white);
+  font-size: 15px;
+  font-weight: 10px;
+  margin-left: -570px;
+}
+
+.nav-bar .logo a span {
+  color: var(--color-purple-light);
+  transition: all 0.3s ease;
+}
+
+/* script js sticky */
+
+.nav-bar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav-bar .menu li a {
+  display: block;
+  color: var(--color-white);
+  font-size: 15px;
+  font-weight: 100px;
+  margin-left: 95px;
+  transition: color 0.3s ease;
+}
+
+.nav-bar .menu li a:hover {
+  color: var(--color-purple-light);
+}
+
+/* script js sticky */
+
+/* icon menu responsive */
+.menu-btn {
+  color: var(--color-white);
+  font-size: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* ============= HOME SECTION ============= */
+.home {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.507)), url("/src/img/space2.jpg");
+  background-size: cover;
+  color: var(--color-white);
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 500px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.home .home-content .text-1 {
+  font-size: 35px;
+  margin-left: 100px;
+  margin-top: 100px;
+
+
+
+}
+
+.home .home-content .text-2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 100px;
+}
+
+.home .home-content .text-3 {
+  font-size: 20px;
+
+  margin-left: 100px;
+}
+
+.home .home-content .text-3 span {
+  color: var(--color-purple-light);
+  font-weight: 500;
+
+}
+
+/* social media icons  */
+.social-media {
+  margin-top: 100px;
+  margin-left: 50px;
+
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 9px;
+  font-size: 35px;
+  color: var(--color-white);
+  cursor: pointer;
+  margin-right: 80px;
+  transition: all .50s ease;
+}
+
+.social-media a:hover i {
+  transform: translateY(-3px);
+  transition: all 0.5s ease;
+  color: var(--color-purple-light);
+}
+
+
+/* ============= ABOUT SECTION/ALL SIMILIAR STYLING ============= */
+section {
+  padding: 100px 0;
+}
+
+footer {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(0, 0, 0);
+}
+
+section .title {
+
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: var(--color-black);
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: var(--first-color);
+  padding: 5px;
+  background: var(--color-white);
+  transform: translateX(-50%);
+}
+
+.about .title::after {
+  background: var(--clean-white-purple);
+  content: "minha história";
+  white-space: nowrap;
+}
+
+.about {
+  font-family: 'Poppins', sans-serif;
+  background: var(--clean-white-purple);
+  background: linear-gradient(rgba(0, 0, 0, 0.377), rgb(0, 0, 0)), url("/src/img/space2.jpg");
+  background-size: cover;
+  color: white;
+
+}
+
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-content .right {
+  width: 100%;
+  margin-left: 150px;
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+
+}
+
+.about .about-content .right .text span {
+  color: var(--first-color);
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background: var(--first-color);
+  color: var(--color-white);
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 350px;
+  border-radius: 150px;
+  border: 2px solid var(--first-color);
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+  color: var(--first-color);
+  background: none;
+}
+
+/* ============= SKILLS SECTION ============= */
+
+
+/* ============= CONQUEST SECTION ============= */
+/* ============= CONQUEST SECTION ============= */
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+section {
+  background: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.623)), url("/src/img/space2.jpg");
+  background-size: cover;
+  padding: 50px 0;
+  color: aliceblue;
+}
+
+.container {
+  max-width: 1044px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.carousel {
+  display: block;
+  text-align: left;
+  position: relative;
+  margin-bottom: 22px;
+
+
+  input {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+
+    &:nth-of-type(6):checked~.carousel__slides .carousel__slide:first-of-type {
+      margin-left: -500%;
+    }
+
+    &:nth-of-type(5):checked~.carousel__slides .carousel__slide:first-of-type {
+      margin-left: -400%;
+    }
+
+    &:nth-of-type(4):checked~.carousel__slides .carousel__slide:first-of-type {
+      margin-left: -300%;
+    }
+
+    &:nth-of-type(3):checked~.carousel__slides .carousel__slide:first-of-type {
+      margin-left: -200%;
+    }
+
+    &:nth-of-type(2):checked~.carousel__slides .carousel__slide:first-of-type {
+      margin-left: -100%;
+    }
+
+    &:nth-of-type(1):checked~.carousel__slides .carousel__slide:first-of-type {
+      margin-left: 0%;
+    }
+
+    &:nth-of-type(1):checked~.carousel__thumbnails li:nth-of-type(1) {
+      box-shadow: 0px 0px 0px 5px rgb(255, 102, 0);
+    }
+
+    &:nth-of-type(2):checked~.carousel__thumbnails li:nth-of-type(2) {
+      box-shadow: 0px 0px 0px 5px rgb(255, 102, 0);
+    }
+
+    &:nth-of-type(3):checked~.carousel__thumbnails li:nth-of-type(3) {
+      box-shadow: 0px 0px 0px 5px rgb(255, 102, 0);
+    }
+
+    &:nth-of-type(4):checked~.carousel__thumbnails li:nth-of-type(4) {
+      box-shadow: 0px 0px 0px 5px rgb(255, 102, 0);
+    }
+
+    &:nth-of-type(5):checked~.carousel__thumbnails li:nth-of-type(5) {
+      box-shadow: 0px 0px 0px 5px rgb(255, 102, 0);
+      ;
+    }
+
+    &:nth-of-type(6):checked~.carousel__thumbnails li:nth-of-type(6) {
+      box-shadow: 0px 0px 0px 5px rgb(255, 102, 0);
+    }
+  }
+}
+
+.carousel__slides {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  display: flex;
+
+}
+
+.carousel__slide {
+  position: relative;
+  display: block;
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  transition: all 300ms ease-out;
+  vertical-align: top;
+  box-sizing: border-box;
+  white-space: normal;
+
+  figure {
+    display: flex;
+    margin: 0;
+
+  }
+
+  div {
+    @include aspect-ratio(3, 2);
+    width: 100%;
+  }
+
+  img {
+    display: absolute;
+    flex:auto;
+    object-fit: cover;
+    border-radius: 5%;
+    width: 600px;
+    margin-left: 10px;
+  }
+
+  figcaption {
+    align-self: flex-end;
+    padding: 20px 20px 0 20px;
+    flex: 0 0 auto;
+    width: 30%;
+    margin-right: 150px;
+    min-width: 150px;
+    margin-top: -15px;
+    font-size: 15px;
+  }
+
+  .credit {
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.76);
+    display: block;
+  }
+
+  &.scrollable {
+    overflow-y: scroll;
+
+  }
+}
+
+.carousel__thumbnails {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-left: 120px;
+  border: 2px solid transparent;
+
+
+  .carousel__slides+& {
+    margin-top: 20px;
+  }
+
+  li {
+    flex: 1 1 auto;
+    max-width: calc((100% / 6) - 20px);
+    margin: 0 10px;
+    transition: all 300ms ease-in-out;
+  }
+
+  label {
+    display: block;
+    @include aspect-ratio(1, 1);
+
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+
+
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* ============= PROJECT SECTION ============= */
+
+
+/* ============= CONTACT SECTION ============= */
+
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color-purple-light);
+}
+
+.contact .contact-content .left p {
+  text-align: justify;
+}
+
+
+/* ============= FOOTER ============= */
+footer {
+  background: var(--color-black-clean);
+  padding: 17px 23px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+footer span a {
+  color: var(--color-purple-light);
+  text-decoration: none;
+
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
+
+
+/* ============= FOOTER ============= */
+footer {
+  background: var(--color-footer);
+  padding: 6px 8px;
+  font-size: 12px;
+  color: var(--clean-light-gray);
+  text-align: center;
+}
+
+footer span a {
+  color: var(--color-purple-light);
+  text-decoration: none;
+  font-size: 12px;
+
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
+
+.centered-content {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("/src/img/space2.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* Isso garante que a seção ocupe toda a altura da tela */
+  text-align: center;
+  /* Isso centraliza o texto horizontalmente */
+}
+
+.centered-content .contact-content {
+  /* Define a largura máxima da seção */
+  width: 100%;
+  margin-left: 600px;
+  padding: 0 15px;
+  /* Adiciona um pouco de espaço nas laterais */
+}
+
+
+
+.custom-social-media {
+  margin-top: 30px;
+  margin-left: 50px;
+
+  /* Adiciona um espaço acima do bloco de ícones */
+}
+
+.custom-social-media a {
+  display: inline-block;
+  margin: 9px;
+  font-size: 28px;
+  color: var(--color-white);
+  cursor: pointer;
+  margin-right: 80px;
+  transition: all .50s ease;
+   /* Adiciona uma transição suave para a cor */
+}
+
+.custom-social-media a:hover {
+  transform: translateY(-3px);
+  transition: all 0.5s ease;
+  color: var(--color-purple-light);
+}
+
+
+
+
+
+
+
+
+
+
+
+
