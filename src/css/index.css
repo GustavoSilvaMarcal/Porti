@@ -153,7 +153,7 @@ section .title::after {
 /* ============= HOME SECTION ============= */
 .home {
   display: flex;
-  background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.507)),url("/src/img/space2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.507)),url("https://raw.githubusercontent.com/GustavoSilvaMarcal/Porti/main/src/img/space.jpg?token=GHSAT0AAAAAACQIA6BQV34HHGQFZ42K2NIYZQG7OPA");
   background-size: cover;
   color: var(--color-white);
   margin: 0 auto;
@@ -265,7 +265,7 @@ section .title::after {
 .about {
   font-family: 'Poppins', sans-serif;
   background: var(--clean-white-purple);
-  background: linear-gradient(rgba(0, 0, 0, 0.377), rgb(0, 0, 0)),url("/src/img/space2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.377), rgb(0, 0, 0)),url("https://raw.githubusercontent.com/GustavoSilvaMarcal/Porti/main/src/img/space.jpg?token=GHSAT0AAAAAACQIA6BQV34HHGQFZ42K2NIYZQG7OPA");
   background-size: cover;
   color: white;
 
@@ -340,7 +340,7 @@ section .title::after {
 
 
 section {
-  background: linear-gradient (rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.623)),url("/src/img/space2.jpg");
+  background: linear-gradient (rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.623)),url("https://raw.githubusercontent.com/GustavoSilvaMarcal/Porti/main/src/img/space.jpg?token=GHSAT0AAAAAACQIA6BQV34HHGQFZ42K2NIYZQG7OPA");
   background-size: cover;
   padding: 50px 0;
   color: aliceblue;
@@ -591,7 +591,7 @@ footer span a:hover {
 }
 
 .centered-content {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("/src/img/space2.jpg");
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://raw.githubusercontent.com/GustavoSilvaMarcal/Porti/main/src/img/space.jpg?token=GHSAT0AAAAAACQIA6BQV34HHGQFZ42K2NIYZQG7OPA");
   background-size: cover;
   display: flex;
   align-items: center;
